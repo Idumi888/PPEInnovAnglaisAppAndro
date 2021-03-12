@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView listeThemeRecyclerView;
     private RecyclerView.Adapter themeListeAdapter;
     private RecyclerView.LayoutManager themeListeLayoutManager;
+    Theme listOfTheme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         themeListeLayoutManager = new LinearLayoutManager(this);
         listeThemeRecyclerView.setLayoutManager(themeListeLayoutManager);
 
-        Theme[] listOfUsers = {new Theme("Guillaume"), new Theme("Guillaume"), new Theme("Julien"), new Theme("Guillaume"),  new Theme("Guillaume"), new Theme("Guillaume")};
+        final Theme[] listOfUsers = {new Theme("Guillaume"), new Theme("Guillaume"), new Theme("Julien"), new Theme("Guillaume"),  new Theme("Guillaume"), new Theme("Guillaume")};
 
         themeListeAdapter = new ThemeListeAdapter(listOfUsers);
         listeThemeRecyclerView.setAdapter(themeListeAdapter);
@@ -38,14 +39,22 @@ public class MainActivity extends AppCompatActivity {
                 .build();
 
         WebServicesInterface webServicesInterface = retrofit.create(WebServicesInterface.class);
-        Call<Api> callGetTodoById = webServicesInterface.getTodoByID();
-        callGetTodoById.enqueue(new Callback<Api>() {
+        Call<Hydra> callGetTodoById = webServicesInterface.getAllUsers();
+        callGetTodoById.enqueue(new Callback<Hydra>() {
             @Override
-            public void onResponse(Call<Api> call, Response<Api> response) {
-                System.out.println(response.body().getNom());
+            public void onResponse(Call<Hydra> call, Response<Hydra> response) {
+                Hydra hydra = response.body();
+                int nombre =hydra.getTab().length;
+
+                for (int drink = 0; drink < nombre; drink++){
+                    System.out.println("");
+                    System.out.print(hydra.getTab()[drink].getNom());
+
+                }
+
             }
             @Override
-            public void onFailure(Call<Api> call, Throwable t) {
+            public void onFailure(Call<Hydra> call, Throwable t) {
                 System.out.println("FAIL");
             }
         });

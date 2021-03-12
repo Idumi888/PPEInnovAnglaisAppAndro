@@ -6,6 +6,7 @@ public class Api {
     @SerializedName("nom")
     private String nom;
 
+
     public String getNom(){
 
         return nom;
