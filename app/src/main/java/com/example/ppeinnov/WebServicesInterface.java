@@ -10,4 +10,10 @@ public interface WebServicesInterface {
 
     @GET("users?page=1")
     Call<Hydra> getAllUsers();
+
+    @GET("themes?page=1")
+    Call<Hydra> getAllThemes();
+
+    @GET("vocabulaires?page=1")
+    Call<Hydra> getAllVocabulaires();
 }
