@@ -48,10 +48,10 @@ public class VocabulaireActivity extends AppCompatActivity {
                 Hydra hydra = response.body();
                 int nombre =hydra.getTab().length;
                 listOfVocabulaire = new Vocabulaire[nombre];
-                for (int drink = 0; drink < nombre; drink++){
+                for (int voca = 0; voca < nombre; voca++){
 
-                    System.out.print(hydra.getTab()[drink].getNom());
-                    listOfVocabulaire[drink] = new Vocabulaire(hydra.getTab()[drink].getLibelle(),hydra.getTab()[drink].getTraduction() );
+                    System.out.print(hydra.getTab()[voca].getNom());
+                    listOfVocabulaire[voca] = new Vocabulaire(hydra.getTab()[voca].getLibelle(),hydra.getTab()[voca].getTraduction() );
 
                 }
                 vocabulaireListeAdapter = new VocabulaireListeAdapter(listOfVocabulaire);

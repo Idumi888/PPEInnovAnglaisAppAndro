@@ -44,12 +44,12 @@ public class UserActivity extends AppCompatActivity {
                 Hydra hydra = response.body();
                 int nombre =hydra.getTab().length;
                 listOfUser = new User[nombre];
-                for (int drink = 0; drink < nombre; drink++){
+                for (int utilisateur = 0; utilisateur < nombre; utilisateur++){
                     System.out.println("");
 
 
-                    System.out.print(hydra.getTab()[drink].getNom());
-                    listOfUser[drink] = new User(hydra.getTab()[drink].getNom(),hydra.getTab()[drink].getPrenom() );
+                    System.out.print(hydra.getTab()[utilisateur].getNom());
+                    listOfUser[utilisateur] = new User(hydra.getTab()[utilisateur].getNom(),hydra.getTab()[utilisateur].getPrenom() );
 
                 }
                 userListeAdapter = new UserListeAdapter(listOfUser);

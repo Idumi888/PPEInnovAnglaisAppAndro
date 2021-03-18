@@ -43,11 +43,11 @@ public class ThemeActivity extends AppCompatActivity {
                 Hydra hydra = response.body();
                 int nombre =hydra.getTab().length;
                 listOfTheme = new Theme[nombre];
-                for (int drink = 0; drink < nombre; drink++){
+                for (int theme = 0; theme < nombre; theme++){
                     System.out.println("");
 
-                    System.out.print(hydra.getTab()[drink].getNom());
-                    listOfTheme[drink] = new Theme(hydra.getTab()[drink].getLibelle());
+                    System.out.print(hydra.getTab()[theme].getNom());
+                    listOfTheme[theme] = new Theme(hydra.getTab()[theme].getLibelle());
 
                 }
                 themeListeAdapter = new ThemeListeAdapter(listOfTheme);
