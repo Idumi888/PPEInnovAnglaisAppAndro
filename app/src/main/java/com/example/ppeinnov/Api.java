@@ -20,6 +20,10 @@ public class Api {
     @SerializedName("prenom")
     private String prenom;
 
+    @SerializedName("fichier")
+    private String[] fichier;
+
+
     public int getId(){
 
         return id;
@@ -41,5 +45,9 @@ public class Api {
     public String getPrenom(){
 
         return prenom;
+    }
+    public String[] getFichier(){
+
+        return fichier;
     }
 }

@@ -51,6 +51,8 @@ public class UserActivity extends AppCompatActivity {
                     System.out.print(hydra.getTab()[utilisateur].getNom());
                     listOfUser[utilisateur] = new User(hydra.getTab()[utilisateur].getNom(),hydra.getTab()[utilisateur].getPrenom() );
 
+                    System.out.println( );
+
                 }
                 userListeAdapter = new UserListeAdapter(listOfUser);
                 listeUserRecyclerView.setAdapter(userListeAdapter);
