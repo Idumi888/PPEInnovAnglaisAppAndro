@@ -31,10 +31,6 @@ public class VocabulaireActivity extends AppCompatActivity {
 
         vocabulaireListeLayoutManager = new LinearLayoutManager(this);
         listeVocabulaireRecyclerView.setLayoutManager(vocabulaireListeLayoutManager);
-
-
-
-
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("http://serveur1.arras-sio.com/symfony4-4066/PpeInov/public/api/")
                 .addConverterFactory(GsonConverterFactory.create())
