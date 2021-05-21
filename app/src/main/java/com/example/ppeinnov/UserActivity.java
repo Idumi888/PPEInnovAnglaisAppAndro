@@ -49,7 +49,8 @@ public class UserActivity extends AppCompatActivity {
 
 
                     System.out.print(hydra.getTab()[utilisateur].getNom());
-                    listOfUser[utilisateur] = new User(hydra.getTab()[utilisateur].getNom(),hydra.getTab()[utilisateur].getPrenom() );
+                    System.out.print(hydra.getTab()[utilisateur].getEntreprise());
+                    listOfUser[utilisateur] = new User(hydra.getTab()[utilisateur].getNom(),hydra.getTab()[utilisateur].getPrenom(),hydra.getTab()[utilisateur].getEntreprise()  );
 
                     System.out.println( );
 

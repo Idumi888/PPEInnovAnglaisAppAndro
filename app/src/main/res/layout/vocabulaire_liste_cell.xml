@@ -9,12 +9,11 @@
         android:id="@+id/vocabulaireLibelle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
         android:layout_marginTop="44dp"
-        android:layout_marginBottom="44dp"
-<<<<<<< HEAD
-        android:textSize="15dp"
-=======
+        app:layout_constraintEnd_toStartOf="@+id/trad"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    =======
         android:textSize="25dp"
 >>>>>>> 3eb88ef28ead05c7d6000dd8bce366b50453e3de
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,11 +25,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="44dp"
-<<<<<<< HEAD
-        android:textSize="15dp"
-=======
+        android:layout_marginEnd="411dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trad"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    =======
         android:textSize="25dp"
 >>>>>>> 3eb88ef28ead05c7d6000dd8bce366b50453e3de
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,24 +41,19 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
         android:layout_marginTop="5dp"
-<<<<<<< HEAD
-        android:layout_marginEnd="200dp"
-        android:text="Vocabulaire : "
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/trad"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/trad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="200dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="337dp"
         android:text="Traduction :"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 =======
         android:layout_marginEnd="150dp"
         android:text="Traduction : "

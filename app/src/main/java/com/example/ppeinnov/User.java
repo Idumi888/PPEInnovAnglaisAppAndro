@@ -4,10 +4,12 @@ public class User {
 
         private String nom;
         private String prenom;
+        private String entreprise;
 
-        public User(String nom, String prenom) {
+        public User(String nom, String prenom, String entreprise) {
             this.nom = nom;
             this.prenom = prenom;
+            this.entreprise = entreprise;
 
         }
 
@@ -17,6 +19,7 @@ public class User {
         public String getPrenom() {
         return prenom;
     }
-
+        public String getEntreprise() { return entreprise;
+    }
     }
 

@@ -23,6 +23,12 @@ public class Api {
     @SerializedName("fichier")
     private String[] fichier;
 
+    @SerializedName("entreprises")
+    private String entreprise;
+
+    @SerializedName("entreprises")
+    private int numEntreprise;
+
 
     public int getId(){
 
@@ -50,4 +56,9 @@ public class Api {
 
         return fichier;
     }
+    public String getEntreprise(){
+
+        return entreprise;
+    }
+    
 }

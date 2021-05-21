@@ -29,6 +29,7 @@ public class UserListeAdapter extends RecyclerView.Adapter<UserCell>{
     public void onBindViewHolder(@NonNull UserCell holder, int position) {
         holder.userNom.setText(dataSource[position].getNom());
         holder.userPrenom.setText(dataSource[position].getPrenom());
+        holder.userEntreprise.setText(dataSource[position].getEntreprise());
     }
 
     @Override
