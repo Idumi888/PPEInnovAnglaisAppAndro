@@ -9,6 +9,7 @@
         android:id="@+id/vocabulaireLibelle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="44dp"
         app:layout_constraintEnd_toStartOf="@+id/trad"
         app:layout_constraintTop_toTopOf="parent" />
@@ -17,6 +18,10 @@
         android:textSize="25dp"
 >>>>>>> 3eb88ef28ead05c7d6000dd8bce366b50453e3de
         app:layout_constraintBottom_toBottomOf="parent"
+=======
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="60dp"
+>>>>>>> e611fe4a1230079db68ce086616ad80f904649d0
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,6 +29,7 @@
         android:id="@+id/vocabulaireTraduction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="44dp"
         android:layout_marginEnd="411dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,12 +49,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toStartOf="@+id/trad"
+=======
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+>>>>>>> e611fe4a1230079db68ce086616ad80f904649d0
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/trad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginTop="5dp"
         android:layout_marginEnd="337dp"
         android:text="Traduction :"
@@ -59,7 +71,14 @@
         android:text="Traduction : "
         android:textSize="25dp"
 >>>>>>> 3eb88ef28ead05c7d6000dd8bce366b50453e3de
+=======
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:text="Traduction :"
+>>>>>>> e611fe4a1230079db68ce086616ad80f904649d0
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
